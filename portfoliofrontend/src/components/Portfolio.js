@@ -42,39 +42,39 @@ export default function Portfolio() {
     return (
         // Displays the form used to add new projects to the portfolio (Will be commented out by default)
         <Container>
-            <Paper elevation={3} style={paperStyle}>
-                <h1 style={{color:"blue"}}><u>Add Project</u></h1>
-        <Box
-            component="form"
-            sx={{
-                '& > :not(style)': { m: 1},
-            }}
-            noValidate
-            autoComplete="off"
-        >
-            <TextField id="outlined-basic" label="Project Name" variant="outlined" fullWidth
-                       value={name}
-                       onChange={(e)=>setName(e.target.value)}
-            />
-            <TextField id="outlined-basic" label="Project Members" variant="outlined" fullWidth
-                       value={members}
-                       onChange={(e)=>setMembers(e.target.value)}
-            />
-            <TextField id="outlined-basic" label="Project Description" variant="outlined" fullWidth
-                       value={description}
-                       onChange={(e)=>setDescription(e.target.value)}
-            />
-            <TextField id="outlined-basic" label="Technologies Used" variant="outlined" fullWidth
-                       value={technologies}
-                       onChange={(e)=>setTechnologies(e.target.value)}
-            />
-            <TextField id="outlined-basic" label="Project Link" variant="outlined" fullWidth
-                       value={link}
-                       onChange={(e)=>setLink(e.target.value)}
-            />
-            <Button color="secondary" onClick={handleClick}>Submit Project</Button>
-        </Box>
-            </Paper>
+        {/*    <Paper elevation={3} style={paperStyle}>*/}
+        {/*        <h1 style={{color:"blue"}}><u>Add Project</u></h1>*/}
+        {/*<Box*/}
+        {/*    component="form"*/}
+        {/*    sx={{*/}
+        {/*        '& > :not(style)': { m: 1},*/}
+        {/*    }}*/}
+        {/*    noValidate*/}
+        {/*    autoComplete="off"*/}
+        {/*>*/}
+        {/*    <TextField id="outlined-basic" label="Project Name" variant="outlined" fullWidth*/}
+        {/*               value={name}*/}
+        {/*               onChange={(e)=>setName(e.target.value)}*/}
+        {/*    />*/}
+        {/*    <TextField id="outlined-basic" label="Project Members" variant="outlined" fullWidth*/}
+        {/*               value={members}*/}
+        {/*               onChange={(e)=>setMembers(e.target.value)}*/}
+        {/*    />*/}
+        {/*    <TextField id="outlined-basic" label="Project Description" variant="outlined" fullWidth*/}
+        {/*               value={description}*/}
+        {/*               onChange={(e)=>setDescription(e.target.value)}*/}
+        {/*    />*/}
+        {/*    <TextField id="outlined-basic" label="Technologies Used" variant="outlined" fullWidth*/}
+        {/*               value={technologies}*/}
+        {/*               onChange={(e)=>setTechnologies(e.target.value)}*/}
+        {/*    />*/}
+        {/*    <TextField id="outlined-basic" label="Project Link" variant="outlined" fullWidth*/}
+        {/*               value={link}*/}
+        {/*               onChange={(e)=>setLink(e.target.value)}*/}
+        {/*    />*/}
+        {/*    <Button color="secondary" onClick={handleClick}>Submit Project</Button>*/}
+        {/*</Box>*/}
+        {/*    </Paper>*/}
             <h1 style={{color:"#fff"}}>Projects</h1>
             <Paper elevation={3} style={paperStyle}>
                 {projects.map(project=>(
